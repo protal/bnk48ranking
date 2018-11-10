@@ -47,7 +47,7 @@ const convertToHtml = (bnk48) => {
         let rank = i + 1
         let size = (rank === 1) ? 'is-size-1' : (rank === 2 ||  rank === 3) ?  'is-size-2' : 'is-size-3'
         let pageLike = e.facebook_like ? e.facebook_like : 0
-        html += `<tr onclick="toggleInfo('${e.facebook}')">`
+        html += `<tr class="is-pointer" onclick="toggleInfo('${e.facebook}')">`
         html += `<td class="${size}">`
         html += `${pageLike}`
         html += `</td>`
