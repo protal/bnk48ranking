@@ -1,13 +1,35 @@
 <html>
     <head>
         <title>BNK48 Ranking</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+        <style>
+        body{
+            background-color: #fce6e8;
+        }
+        td{
+            vertical-align: middle !important;
+        }
+        </style>
     </head>
     <body>
-        <H1 class="head-1">BNK48 Ranking</H1>
-        <div id="data">
+        <div class="container">
+            <H1 class="is-size-1">BNK48 Fanpage Ranking</H1>
+            <table class="table is-fullwidth is-striped">
+                <thead>
+                    <tr>
+                        <th>Like</th>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
 
+                </tbody>
+            </table>
         </div>
+        
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script src="./js/script.js"></script>
     </body>
